@@ -99,3 +99,53 @@ function findLeapYear(year) {
 }
 console.log(`How many leap year: ${findLeapYear([2052, 2033, 2026, 2022, 2032])}`);
 console.log(`How many leap year: ${findLeapYear([2033, 2031, 2026, 2022])}`);
+
+//Theory based practise...
+function  oddArray(array){
+    const oddarray = [];
+    for(const key of array){
+        console.log(key);
+        if(key %2!==0){
+            oddarray.push(key);
+        }
+    }
+    console.log('New Odd array: ',oddarray);
+    let sum = 0;
+    for(const k of oddarray){
+        sum = sum + k;
+    }
+    console.log(`Sum is : ${sum}`);
+    const avg = sum/oddarray.length;
+    console.log(`Average of odd array: ${avg}`);
+}
+oddArray([1,2,3,5,10,15,20,25]);
+//1..
+function evenArray (even){
+    const newEvenArray = [];
+    for(const k of even){
+        if(k%2 === 0){
+            newEvenArray.push(k);
+        }
+    }
+    console.log(`New Even array : ${newEvenArray}`);
+    let sum = 0;
+    for(const key of newEvenArray){
+        sum = sum + key;
+    }
+    console.log(`Sum is : ${sum}`);
+    const avg = sum / newEvenArray.length;
+    console.log(`Average of even array : ${avg}`);
+}
+evenArray([1,2,4,5,6,8,9,15]);
+//2..
+function oddMultiple(multiple){
+    const newArray = [];
+    for(const key of multiple){
+        if(key %2 !== 0){
+            newArray.push(key*2) ;
+        }
+    }
+    return newArray;
+}
+console.log(`The array is : ${oddMultiple([2, 3,4,6,8,9,11,12,14,15])}`);
+
