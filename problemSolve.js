@@ -196,3 +196,42 @@ function defaultObject({ salary = 50000, tax = 10} = {}){
 console.log(defaultObject({}));
 console.log(defaultObject({salary: 30000, tax: 20}));
 
+//Arrow function practise..
+//1..
+const firstIndex = (array) => array[0];
+console.log(firstIndex([5,10,20,35]));
+
+//2..
+const threeValue = (a,b,c) => a*b*c;
+console.log(threeValue(2,3,5));
+
+//3..
+const defaultParameter = ()=> {
+    return 'unknown';
+}
+console.log(defaultParameter());
+
+//4...
+const calculateMoney = (money)=> money.tk/5;// here money receive the whole person object. then use '.' to access the 'tk' property...
+const person = {
+    name: 'Nazib',
+    tk: 10000
+}
+console.log(calculateMoney(person));
+
+//5..
+const findLastIndex = (array)=> {
+    const a = array.length;
+    const result = a - 1;
+    const first = array[0];
+    const newResult = first + array[result];
+    return newResult;
+}
+console.log(findLastIndex([5,10,15,20,25]));
+
+//6..
+const addition = (a=10, b=5)=> a+b;
+console.log(addition());
+console.log(addition(5));
+console.log(addition(undefined, 25));//when use 1 parameter without 2nd parameter then use undefind key word...
+
