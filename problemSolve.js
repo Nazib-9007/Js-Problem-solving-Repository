@@ -171,5 +171,28 @@ function removeDupliValue(array){
 }
 console.log(`New array: ${removeDupliValue([1,5,61,5,87,7,5,81,61])}`);
 
+//Different topic after learning.....
+//Default parameter problem practise..
+function defaultSalary (name = 'anonymous', salary = 0){
+    return `Name: ${name} & Salary: ${salary}`;
+}
+console.log(defaultSalary());
+console.log(defaultSalary('Nazib', 90000));
 
+//2..
+function school({principle = 1000, rate = 5} = {}){
+    const interest = principle * rate / 100;
+    return `Interest is : ${interest}`;
+}
+console.log(school({}));
+console.log(school({principle: 35000, rate: 15}));
+
+//3..
+function defaultObject({ salary = 50000, tax = 10} = {}){
+    const calculate = salary * tax / 100; 
+    const result = salary - calculate;
+    return `Persentage of my salary ${calculate} and result is: ${result}`;
+}
+console.log(defaultObject({}));
+console.log(defaultObject({salary: 30000, tax: 20}));
 
