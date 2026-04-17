@@ -148,4 +148,28 @@ function oddMultiple(multiple){
     return newArray;
 }
 console.log(`The array is : ${oddMultiple([2, 3,4,6,8,9,11,12,14,15])}`);
+function duplicateValue(array){
+    const newArray = [];
+    for(const key of array){
+        if(newArray.includes(key) === false){
+            newArray.push(key);
+        }
+    }
+    return newArray;
+}
+console.log(`New array is: ${duplicateValue(['Nazib', 'Nafiz', 'Nurul', 'Nazib', 'Nafiz', 'Mitu', 'Tasnim'])}`);
+
+//Unique problem.. remove duplicate item from an array
+function removeDupliValue(array){
+    const newArray = [];
+    for(const keys of array){
+        if(newArray.includes(keys) === false){
+                newArray.push(keys);
+        }
+    }
+    return newArray;
+}
+console.log(`New array: ${removeDupliValue([1,5,61,5,87,7,5,81,61])}`);
+
+
 
