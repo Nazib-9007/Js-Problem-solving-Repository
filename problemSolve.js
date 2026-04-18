@@ -290,7 +290,56 @@ const teacher = {
 }
 const {naae, profession : job} = teacher;
 console.log(naae,job);
+//Rest operator problem solving...
+//1..
+const product = {
+    name:'Laptop',
+    price: 50000,
+    brand:'Dell'
+}
+const {name, ...allRest} = product;
+console.log(name, allRest);
 
+//2..
+const project = {
+    id:101,
+    title:'Web App',
+    budget: 3000,
+    client: 'Teech Corp'
+}
+const {title, ...newAllItem} = project;
+console.log(title, newAllItem);
+
+//3..
+const programmer = {
+    name: 'Sophia',
+    language: 'Javascript',
+    experience: 5,
+    speciality: 'Frontend',
+    tools: 'React'
+}
+const {language, speciality, ...details} = programmer;
+console.log(language, speciality, details);
+
+//4..
+const numArray = [10,20,3,30,300,3000];
+const [first,second, ...array] = numArray;
+console.log(first, second, array);
+
+//5..
+const myFunction = (a,b,...numRest)=>{
+    return console.log(a,b,numRest);
+}
+myFunction(1,2,3,30,50,10);
+
+
+//6..
+const newFunction = (...newNum)=>{
+    const newArr = [];
+    newArr.push(newNum);
+    return console.log(newArr);
+}
+newFunction(5,10,51,20,30,40);
 
 
 
