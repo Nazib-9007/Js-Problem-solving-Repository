@@ -290,6 +290,7 @@ const teacher = {
 }
 const {naae, profession : job} = teacher;
 console.log(naae,job);
+
 //Rest operator problem solving...
 //1..
 const product = {
@@ -335,9 +336,12 @@ myFunction(1,2,3,30,50,10);
 
 //6..
 const newFunction = (...newNum)=>{
-    const newArr = [];
-    newArr.push(newNum);
-    return console.log(newArr);
+    let sum = 0;
+    for(const key of newNum){
+        sum = sum + key;
+    }
+    const avg = sum / newNum.length;
+    return console.log(avg);
 }
 newFunction(5,10,51,20,30,40);
 
