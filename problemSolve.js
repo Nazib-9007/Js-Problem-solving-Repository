@@ -333,7 +333,6 @@ const myFunction = (a,b,...numRest)=>{
 }
 myFunction(1,2,3,30,50,10);
 
-
 //6..
 const newFunction = (...newNum)=>{
     let sum = 0;
@@ -344,6 +343,49 @@ const newFunction = (...newNum)=>{
     return console.log(avg);
 }
 newFunction(5,10,51,20,30,40);
+//Spread operator  problem solving...
+//1...
+const technology = ['Condition', 'array', 'loop'];
+const array = ['variable',...technology];
+console.log(array);
+
+//2...
+const fruits = ['Apple','Banana', 'Mango'];
+const myFruits = [...fruits, 'Papaya', 'Orange'];
+console.log(myFruits);
+
+//3...
+const frontEnd = ['JavaScript'], backEnd = ['Node.js'], dataBase = ['MongoDB'];
+const combineArray = [...frontEnd, ...backEnd, ...dataBase];
+console.log(combineArray);
+
+//4...
+const webSite = {
+    name: 'Mysite',
+    typpe: 'e-commerce',
+    status: 'Active'
+}
+const newObject = {...webSite, theme:'dark'};
+console.log(newObject);
+
+//5..
+const young = {
+    name: 'Arif',
+    age: 30,
+    country: 'B Baria'
+}
+const {country, ...newYoungObject} = young;
+console.log(newYoungObject);
+
+//6...
+const car = {
+    make: 'Toyota',
+    model: 'Corolla',
+    year: 2020
+}
+const newCar = {...car, year:2032};
+console.log(newCar);
+
 
 
 
