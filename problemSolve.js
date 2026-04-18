@@ -234,4 +234,71 @@ const addition = (a=10, b=5)=> a+b;
 console.log(addition());
 console.log(addition(5));
 console.log(addition(undefined, 25));//when use 1 parameter without 2nd parameter then use undefind key word...
+//Destructuring problem solveing...
+//1..
+const product = {
+    name: 'Laptop',
+    price: 50000,
+    brand: 'Dell'
+}
+const {brand} = product;
+console.log(brand);
+
+//2..
+const item = {
+    name: 'Mobile',
+    price: 20000,
+    phone: 'Samsung'
+}
+const {phone, price} = item;
+console.log(phone, price);
+
+//3...
+const colors =  ['red', 'green', 'yellow'];
+const [first, second] = colors;
+console.log(first, second);
+
+//4..
+const threeDIgit = [5,10,15];
+const [ , sec] = threeDIgit;
+console.log(sec);
+
+//5..
+const digits = [2,4,6,8];
+const [two, , ,eight] = digits;
+console.log(two, eight);
+
+//6..
+function multiply(a, b){
+    return [a*3, b*3];
+}
+const [prothom, ditio] = multiply(5,10);
+console.log(prothom, ditio);
+
+//7..
+const person = {
+    name:'Nazib', 
+    city:'Dhaka'
+}
+const {name, city, phoon = 'N/A'} = person;
+console.log(name, city, phoon);
+
+//8..
+const teacher = {
+    naae:  'Rahim',
+    profession: 'Teacher'
+}
+const {naae, profession : job} = teacher;
+console.log(naae,job);
+
+
+
+
+
+
+
+
+
+
+
 
