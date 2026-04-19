@@ -386,14 +386,14 @@ const car = {
 const newCar = {...car, year:2032};
 console.log(newCar);
 
+//Export and Import file code using in javascript..
+//solve this export and import type problem...
 
+export function add(a, b){
+    return a+b;
+}
 
-
-
-
-
-
-
-
-
-
+//default and Named function export...
+export default function greet(){
+    return 'Hellow World';
+}
