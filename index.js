@@ -30,3 +30,11 @@ collection[0].style.margin = '15px';
 
 const tag = document.getElementsByTagName ('h3');
 tag[0].innerHTML = 'After use Tag name method';
+
+const parents = document.getElementById('div');
+console.log(parents);
+
+const para = document.getElementById('p');
+const div = document.createElement('div');
+div.innerHTML = '<h3>Creating a new node</h3>'
+para.before(div);
