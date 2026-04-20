@@ -34,7 +34,13 @@ tag[0].innerHTML = 'After use Tag name method';
 const parents = document.getElementById('div');
 console.log(parents);
 
+//before and after method..
 const para = document.getElementById('p');
 const div = document.createElement('div');
 div.innerHTML = '<h3>Creating a new node</h3>'
 para.before(div);
+
+//insertAdjacentHTML method..
+const h2 = document.getElementById('myH2');
+const html = '<p>My new paragraph</p>';
+h2.insertAdjacentHTML('beforeend', html);
