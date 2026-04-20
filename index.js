@@ -11,3 +11,22 @@ import newNameFunction from './problemSolve.js';
 console.log(newNameFunctoin());
 
 //SO, that's the concept of import and export in javascript...
+
+//Just practise DOM
+function geeks(){
+    const demo = document.getElementById('geeks');
+    demo.style.color = 'green';
+}
+
+function geeksFor(){
+    const x = document.getElementsByName('ga');
+    alert('Total element with name ga are : '+ x.length);
+}
+
+const collection = document.getElementsByClassName('exampleColor');
+collection[0].style.backgroundColor = 'green';
+collection[0].style.padding = '10px';
+collection[0].style.margin = '15px';
+
+const tag = document.getElementsByTagName ('h3');
+tag[0].innerHTML = 'After use Tag name method';
