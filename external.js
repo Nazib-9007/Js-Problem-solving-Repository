@@ -11,6 +11,7 @@
 // }
 // alert('Access granted');
 
+
 let color = ['Red', 'Green', 'Blue'];
 let push = color.push('Yellow');
 console.log(push, color.length);
