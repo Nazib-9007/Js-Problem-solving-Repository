@@ -9,7 +9,7 @@
 // while(Userinput !== "secret123"){
 //     Userinput = prompt('Wrong! try again');
 // }
-// alert('Access granted');
+// alert('Access granted') ;
 
 
 let color = ['Red', 'Green', 'Blue'];
