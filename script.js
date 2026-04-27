@@ -43,3 +43,24 @@ const writeFunction = array.forEach(arr => console.log(arr));
 //9..
 const animale = ['Cow', 'Goat', 'Sheep', 'Horse'];
 const printAnimale = animale.forEach(ani => console.log(ani));
+
+//Array Method some, every, flat problem practice....
+//1...
+const number = [1, 2,3, 101, 100, 110, 90];
+const findNumber = number.some(num => num>100);
+console.log(findNumber);
+
+//2..
+const num = [5,10,30,45,34, 39];
+const checkNum = num.every(n => n % 5 === 0);
+console.log(checkNum);
+
+//3..
+const words = ['Kello', 'Gello', 'Cello', 'Hello'];
+const answer = words.some(w => w === 'Hello');
+console.log(answer);
+
+//4.
+const ages = [24,22,25,21,30, 10, 18, 19];
+const ansAge = ages.every(a => a > 18);
+console.log(ansAge);
