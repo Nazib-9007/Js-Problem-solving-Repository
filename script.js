@@ -68,3 +68,37 @@ console.log(hasPassed);
 const ages = [24,22,25,21,30, 10, 18, 19];
 const ansAge = ages.every(a => a > 18);
 console.log(ansAge);
+
+//Array method reduce practice problem solove...
+//1...
+const arr = [5,10,15,20,25];
+const useReduce = arr.reduce((a,b) => a+b, 0);
+console.log(`Total number: ${useReduce}`);
+
+//2...
+const owner = [
+    {name: 'Shampoo', price: 100},
+    {name: 'Soap', price: 50},
+    {name: 'Toothpaste', price: 75}
+];
+const result = owner.reduce((p,q) => p+q.price, 0);
+console.log(`Total price: ${result}`);
+
+//3...
+const productList = [
+    {name: 'Pen', price: 5},
+    {name: 'Book', price: 50},
+    {name: 'Bag', price: 100}
+];
+const totalPrice = productList.reduce((e,s)=> e+s.price, 0);
+console.log(`Total price of product: ${totalPrice}`);
+
+//4...
+const setOfnumber = [1,2,3,4,5];
+const restNumber = setOfnumber.reduce((w,r)=>w*r);
+console.log(restNumber);
+
+//5...
+const arr1 = [100,200,300,400,500];
+const useReduce1 = arr.reduce((a,b) => a+b, 50);
+console.log(`Total number: ${useReduce1}`);
