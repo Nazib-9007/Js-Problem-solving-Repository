@@ -123,3 +123,17 @@ console.log(friends.sort((c,d)=> c.age - d.age));
 //4...
 const name = ['Sabil', 'Zubayer', 'Sarwar', 'Delower', 'Adnan'];
 console.log(name.sort());
+
+
+//Array method reverse problem solve...
+//1...
+const names = ['Zara', 'Amir', 'Saltom', 'Luna'];
+console.log(names.reverse());
+
+//2..
+const users = [
+    {name: 'Ali', age: 30},
+    {name: 'Sara', age: 25},
+    {name: 'Tatti', age: 35}
+];
+console.log(users.reverse());
