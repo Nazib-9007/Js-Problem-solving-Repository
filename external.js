@@ -72,3 +72,24 @@ while (divide < 111) {
     console.log(answer);
     divide++;
 }
+
+//Reduce method problem...
+const number = [4,5,7,1,2,66];
+// let sum = 0;
+// for(const num of number){
+//     sum = sum+num;
+// }
+const result = number.reduce((sum, num) => sum = sum+num, 0);
+console.log(result);
+
+const num = [32,34,36,73,14,22,5];
+const returntResult = num.reduce((p,q) => p+q, 0);
+console.log(returntResult);
+
+const products = [
+    {id:1, name: 'Lenovo', price: 60000},
+    {id: 2, name: 'Dell', price: 70000},
+    {id:3, name: 'Mac', price: 100000}
+];
+const Map = products.map((p => p.name));
+console.log(Map);
