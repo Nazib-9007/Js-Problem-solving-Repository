@@ -59,6 +59,10 @@ console.log(checkNum);
 const words = ['Kello', 'Gello', 'Cello', 'Hello'];
 const answer = words.some(w => w === 'Hello');
 console.log(answer);
+//Extra problem...
+const score = [30,45,55,80,90];
+const hasPassed = score.some(num => num>50);
+console.log(hasPassed);
 
 //4.
 const ages = [24,22,25,21,30, 10, 18, 19];
