@@ -102,3 +102,24 @@ console.log(restNumber);
 const arr1 = [100,200,300,400,500];
 const useReduce1 = arr.reduce((a,b) => a+b, 50);
 console.log(`Total number: ${useReduce1}`);
+
+//Array method sort problem solve...
+//1...
+const number = [50, 12, 25, 8, 15];
+console.log(number.sort((a,b)=>a-b));
+
+//2...
+const desnumber = [13,2,45,9,6];
+console.log(desnumber.sort((p,q)=>q-p));
+
+//3..
+const friends = [
+    {name: 'Ali', age: 29},
+    {name: 'Sara', age: 22},
+    {name: 'Tultul', age: 35}
+];
+console.log(friends.sort((c,d)=> c.age - d.age));
+
+//4...
+const name = ['Sabil', 'Zubayer', 'Sarwar', 'Delower', 'Adnan'];
+console.log(name.sort());
