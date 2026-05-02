@@ -44,3 +44,42 @@ para.before(div);
 const h2 = document.getElementById('myH2');
 const html = '<p>My new paragraph</p>';
 h2.insertAdjacentHTML('beforeend', html);
+
+//CallBack function problem solve...
+function calculate(a,b,callBack){
+    const result = a+b;
+    return callBack(result);
+}
+function printResult(value){
+    console.log(`Result is ${value}`);
+}
+
+calculate(5,5,printResult);
+
+const num = [1,2,3,4,5];
+const doubleNumber = num.map(number => number*2);
+console.log(doubleNumber);
+
+const value = [1,2,3,4,5];
+const getResult = value.map(function (numm){
+    return numm*2;
+})
+console.log(getResult);
+
+///CallBack function practice problem solve...
+function myFunction (callBackk) {
+    callBackk();
+}
+function getresult (){
+    console.log(`This is a callback Funciton`);
+}
+myFunction(getresult);
+
+//2...
+function greeting (getFunction){
+    getFunction();
+}
+function greetingHandeler(){
+    console.log('This is greetingHandler function');
+}
+greeting(greetingHandeler);
