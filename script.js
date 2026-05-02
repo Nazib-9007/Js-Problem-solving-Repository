@@ -178,4 +178,21 @@ console.log(language.indexOf('rip'));
 const text = 'Immutable';
 console.log(text.length, text.includes('mutable'));
 
+//Array String method Upper and Lower case practice problem solve... 
+//1...
+const email = 'User@Example.Com';
+console.log(email.toLowerCase());
+
+//2...
+const greeting = 'hELlo WoRLd';
+console.log(greeting.toUpperCase(), greeting.toLocaleLowerCase());
+
+//3...
+const language = 'javaScript';
+console.log(language.toLowerCase().includes('script'));
+
+//4...
+const text = 'nodeJs';
+console.log(text[0].toLowerCase().includes('N'));
+
 
