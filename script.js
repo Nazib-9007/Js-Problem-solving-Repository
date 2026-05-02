@@ -195,4 +195,13 @@ console.log(language.toLowerCase().includes('script'));
 const text = 'nodeJs';
 console.log(text[0].toLowerCase().includes('N'));
 
+//Function and Boolean Constructor...
+const strNum = '45';
+const num = Number(strNum);
+console.log(typeof(num));
+
+const add = new Function('a','b', 'return a+b');
+console.log(add(5,5));
+const willAttend = 0;
+console.log(typeof(Boolean(willAttend)));
 
