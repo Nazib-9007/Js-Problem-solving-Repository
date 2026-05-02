@@ -157,6 +157,25 @@ const players = ['Messi', 'Ronaldo', 'Neymar', 'Mbappe'];
 console.log(players.splice(2,1, 'Halland'));
 console.log(players); 
 
+//Array String method practice problem solve... 
+//1...
+const city = 'Chattogram';
+console.log(city.indexOf('g'));
 
+//2...
+const division = 'Sylhet';
+console.log(division.includes('y'));
+
+//3...
+const naam = 'Rifat';
+console.log(naam[4]);
+
+//4...
+const language = 'Javascript';
+console.log(language.indexOf('rip'));
+
+//5...
+const text = 'Immutable';
+console.log(text.length, text.includes('mutable'));
 
 
