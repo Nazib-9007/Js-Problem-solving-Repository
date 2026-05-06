@@ -1,7 +1,7 @@
 import {add} from './problemSolve.js';
 console.log(add(5,5));
 
-//If when arise this type of sitiution like need to change the name of function then us " as " property..
+//If when arise this type of sitiution like need to change the name of function then us " as " property.....
 
 import {add as sum} from './problemSolve.js';
 console.log(sum(5,5));
