@@ -130,3 +130,18 @@ console.log(insertName);
 
 var insertName = fullName("S M Nazib", " Ul Alam");
 console.log(insertName);
+//use for object...
+function getPrice (product){
+    if(typeof product !== "object"){
+        return "Please provide  an object";
+    }
+    const price = product.price;
+    return price;
+}
+const result = getPrice({
+    name :"Hair Band",
+    id: 'abc25',
+    expDate: '8/9/2026',
+    price: 500
+});
+console.log(result);
