@@ -95,10 +95,38 @@ const result2 = sum(5, "6")
 console.log(result2)
 console.log(typeof(result2))
 
+// Input Error Validatation Check....
 const multiply = function(a,b){
     total = a*b;
     return total;
 }
 const value = multiply(5, "seven");
 console.log(value)
-console.log(typeof(value))
+console.log(typeof(value));
+
+const myFunction = function(num1, num2){
+    if(typeof num1!== "number" || typeof num2!== "number"){
+        return "Please enter valid input";
+    }
+    const multi = num1*num2;
+    return multi;
+}
+const result = myFunction(5,"Eight");
+console.log(result)
+
+// we can use this type of error handeling in form, search item etc..
+function fullName (first, second){
+    if(typeof first !== "string"){
+        return "First Name should be a string"
+    } else if (typeof second !== "string"){
+        return "Second Name should be a string";
+    }
+    const fullname = first+second;
+    return fullname;
+}
+
+var insertName = fullName(23, "Ul Alam");
+console.log(insertName);
+
+var insertName = fullName("S M Nazib", " Ul Alam");
+console.log(insertName);
