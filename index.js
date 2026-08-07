@@ -83,3 +83,22 @@ function greetingHandeler(){
     console.log('This is greetingHandler function');
 }
 greeting(greetingHandeler);
+
+function sum (num1, num2){
+    const total = num1+num2;
+    return total;
+}
+const result = sum(5,7)
+console.log(result);
+
+const result2 = sum(5, "6")
+console.log(result2)
+console.log(typeof(result2))
+
+const multiply = function(a,b){
+    total = a*b;
+    return total;
+}
+const value = multiply(5, "seven");
+console.log(value)
+console.log(typeof(value))
