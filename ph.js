@@ -14,3 +14,26 @@ console.log(5 * '')
 console.log(typeof(undefined))
 console.log(typeof(NaN))
 console.log(typeof(null))
+
+// BMI Calculation...
+const weight = process.argv[2]
+const height = process.argv[3]
+function calBMI (weight, height){
+    const bmi = weight / (height*height);
+    return bmi;
+}
+const result = calBMI(weight, height)
+console.log(result)
+if (calBMI() < 18.5){
+    console.log('Underweight')
+} else if(18.5 <= result && result <= 24.9){
+    console.log('Normal weight')
+}else if(25 <= result && result <= 29.9){
+    console.log('Overweight')
+}else if(30 <= result && result <= 34.9){
+    console.log('Class 1 obese')
+}else if(35 <= result && result <= 39.9){
+    console.log('Class 2 obese')
+}else{
+    console.log('Class 3 obese')
+}
