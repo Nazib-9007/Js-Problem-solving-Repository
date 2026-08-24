@@ -67,3 +67,24 @@ user.address = {
 console.log(user)
 console.log(Object.entries(user))
 console.log(Object.keys(user))
+//nested  data
+let person = {
+    name: 'John',
+    age: 25,
+    address: {
+        city: 'Bhusan',
+        languange: 'Korean',
+        area_eath: 'Asia',
+        zipcode: 5000
+    },
+    country: 'Korea',
+    veihcle: ['cars', 'electric bus', 'electric bike', 'cycle']
+};
+console.log(person['veihcle'])
+console.log(typeof(person['veihcle']))
+let fruits = ['Orange', 'Mango', 'Banana', 'Apple']
+let count = 0;
+while(count < fruits.length){
+    console.log(`Fruits: ${fruits[count]}`)
+    count++;
+}
