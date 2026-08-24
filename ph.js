@@ -37,3 +37,33 @@ if (calBMI() < 18.5){
 }else{
     console.log('Class 3 obese')
 }
+// Moduile--->2
+// Js array object
+let name = ['Nazib', 'Nafiz', 'Alam', 'Orpa', 2, true];
+console.log(name.length)
+console.log(name[3])
+
+// Array Methods (push, pop, shift, unshift)
+
+let colors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue']
+//splice(start_index, delete_count, item1, item2, item3...)
+//object
+
+let user = {
+    name:'Nazib',
+    age: 24,
+    address: 'Dhaka',
+    area: 'Mirpur 13'
+}
+delete user.age
+console.log(user)
+user.age = 25
+console.log(user)
+user.address = {
+    city: 'Dhaka',
+    area: '22 Teyki',
+    thana: 'Kafrul Thana'
+}
+console.log(user)
+console.log(Object.entries(user))
+console.log(Object.keys(user))
