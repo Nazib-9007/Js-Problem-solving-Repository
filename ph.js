@@ -101,6 +101,6 @@ let totalAmount = 0
 
 for (const item of cart){
     totalItem += item.quantity
-    totalAmount += item.price
+    totalAmount += item.price * item.quantity
 }
 console.log(`Total items: ${totalItem} and Total price: ${totalAmount} BDT`);
