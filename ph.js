@@ -88,3 +88,19 @@ while(count < fruits.length){
     console.log(`Fruits: ${fruits[count]}`)
     count++;
 }
+
+//Task: How many items were purchased, and what is the total bill amount in BDT...
+let cart = [
+    {name: 'Shirt', price: 1200, quantity: 2},
+    {name: 'Pants', price: 1800, quantity: 1},
+    {name: 'Socks', price: 150, quantity: 3}
+];
+
+let totalItem = 0
+let totalAmount = 0
+
+for (const item of cart){
+    totalItem += item.quantity
+    totalAmount += item.price
+}
+console.log(`Total items: ${totalItem} and Total price: ${totalAmount} BDT`);
