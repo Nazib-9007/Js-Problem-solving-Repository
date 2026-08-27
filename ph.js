@@ -104,3 +104,48 @@ for (const item of cart){
     totalAmount += item.price * item.quantity
 }
 console.log(`Total items: ${totalItem} and Total price: ${totalAmount} BDT`);
+
+let employess = [
+    {id: 1001, name: 'Karim', position: 'MD'},
+    {id: 1002, name: 'Rahim', position: 'CEO'}
+]
+
+function addEmploy(name, post){
+    let newMember = employess.length > 0 ? employess[employess.length - 1].id + 1 : 1001
+
+    let newEmploy = {
+        id : newMember,
+        name: name,
+        position: post
+    }
+
+    employess.push(newEmploy)
+    console.log("Successfully added new employee");
+}
+
+addEmploy('Nazib', 'Co-Founder')
+console.log(employess);
+
+let products = [
+    {id: 501, name: 'Powder', price: 10, quentity: 2},
+    {id: 502, name: 'Vazline', price: 5, quentity: 4}
+]
+
+function addProduct(name, price, quantity){
+    let newProduct = products.length > 0 ? products[products.length - 1].id + 1 : 501;
+    let newProductobj = {
+        id: newProduct,
+        name: name,
+        price: price,
+        quantity: quantity
+    } 
+
+    if(price > 0 && quantity > 0){
+        products.push(newProductobj)
+        console.log('Successfully added product!');
+    } else{
+        console.log("Sorry! Invalide iteration, you cann't added new product");
+    }
+}
+addProduct ('Pencile', 0, 0)
+console.log(products);
