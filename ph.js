@@ -235,3 +235,56 @@ let estPrice = products.filter((p) => p.inStock == true).reduce((acc, curr) => {
 }, 0)
 
 console.log(estPrice);
+
+let user1 = {
+    name: "Rahim",
+    address: {
+        city: "Dhaka",
+    },
+};
+
+let user2 = {
+    name: "Karim",
+    // no address
+};
+console.log(user1.address.city);
+// ?
+console.log(user2?.address?.city);
+// ??
+console.log(user2?.address?.city ?? 'Chattogram');// যদি undefined আসে তাইলে '??' টা default value -> ctg return করে
+
+/// import and export...
+// // export import...
+
+// function add(a,b){
+//     return a+b;
+// }
+
+// export function sub (a,b){
+//     if(a>b){
+//         return a - b;
+//     }else{
+//         return b - a
+//     }
+// }
+
+// export const pi = 3.1416;
+
+// export default add;
+
+export const user = {
+    name: 'John Smith',
+    age: 25,
+    address: {
+        city: 'Melbourne city',
+        country: 'Australia'
+    }
+}
+export default user;
+// syntex => import { receive } from ' /file_name.extention
+// syntex => export function_name as it is... and add export default like  use_function_name...
+// import add, { sub , pi } from './ph.js'
+// console.log(add(5,5));
+// console.log(sub(8,9), pi);
+import { user } from './ph.js';
+console.log(user.name, user.address.city);
