@@ -188,3 +188,50 @@ const employee = {
 
 const {name: name1, address: {city: area}, hobbies: [firsthobby]} = employee
 console.log(firsthobby, area, name1);
+
+let student = [
+    {name: 'Rahim', marks: 85},
+    {name: 'Karim', marks: 45},
+    {name: 'Fahim', marks: 70}
+]
+
+let fruits = ['Apple', 'Banana', 'Orange', 'Jackfruit']
+
+// find method of array..
+// let newFruit = fruits.filter((f) => f.length > 5) // filter() => find() মতই কিন্তু এইটা সব চেক করবে...
+
+let newFruit = fruits.find((f) => f.length > 5)// find() => যদি ১ম এই শর্ত পুরণ করে তাইলে এর পরে আর চেক করবে না...
+console.log(newFruit);
+
+let findFr = fruits.includes('Mango')//Return boolean = includes
+console.log(findFr);
+
+// let someStd = student.some((s) => s.marks > 80) // some() => কিছু সার্চ করবে...
+
+let someStd = student.every((s) => s.marks > 80) // every() => সব কিছু সার্চ করে দেখবে...
+console.log(someStd);
+
+// reduce, sort, chaining methods...
+
+let products = [
+  { title: "Mouse", price: 500, inStock: true },
+  { title: "Keyboard", price: 1200, inStock: false },
+  { title: "Monitor", price: 8000, inStock: true },
+  { title: "Headphone", price: 1500, inStock: true },
+]
+
+// accumulator => যোগফল রাখবে আর  current => লুপ করে করে অবজেক্ট দিবে
+let totalPrice = products.reduce((acc, current) => {
+    return acc += current.price
+}, 0)
+console.log(totalPrice);
+
+//sort...
+let sorted = products.sort((a,b) => a.price - b.price)
+console.log(sorted);
+
+let estPrice = products.filter((p) => p.inStock == true).reduce((acc, curr) => {
+    return acc += curr.price
+}, 0)
+
+console.log(estPrice);
