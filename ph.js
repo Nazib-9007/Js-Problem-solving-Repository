@@ -149,3 +149,42 @@ function addProduct(name, price, quantity){
 }
 addProduct ('Pencile', 0, 0)
 console.log(products);
+
+//Destructuring object, array, nested..
+
+const student = {
+    id: 9007,
+    name: 'John',
+    age: 24,
+    address: {
+        city: 'Dhaka',
+        zipCode: 100
+    }
+}
+
+// Destructuring --> it's break element by each part.
+
+const {
+    name: stdName,
+    address: {city, zipCode}
+} = student
+console.log(stdName, zipCode);
+
+//for array
+const arr = ['1st', '2nd', '3rd', '4th', '5th'];
+const [, , , fourth, fifth] = arr
+console.log(fourth, fifth);
+
+const employee = {
+    id: 9007,
+    name: 'John',
+    age: 24,
+    address: {
+        city: 'Dhaka',
+        zipCode: 100
+    },
+    hobbies: ['Gardening', 'Painting']
+}
+
+const {name: name1, address: {city: area}, hobbies: [firsthobby]} = employee
+console.log(firsthobby, area, name1);
